@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Song</title>
+
+    <link rel="stylesheet" href="../css/AddNewSong.css">
+    <script src="../app/AddNewSongController.js"></script>
+
+</head>
+<body>
+    <h2>Add new song 🎵</h2>
+
+    <div>
+        <form onsubmit="setNewSong()" id="signup">
+          <label for="idNombreCancion">Canción</label>
+          <input type="text" id="idNombreCancion" placeholder="Nombre de la Canción" required>
+      
+          <label for="idArtista">Artista</label>
+          <input type="text" id="idArtista" placeholder="Nombre del Artista" required>
+      
+          <label for="idAlbum">Album</label>     
+          <input type="text" id="idAlbum" placeholder="Nombre del Album" required>
+
+          <label for="idURL">URL</label>     
+          <input type="text" id="idURL" placeholder="Dirección donde se aloja la canción" required>
+
+          <label for="idLetra">Letra</label>     
+          <textarea id="idLetra" placeholder="Coloque aquí la letra de la cancion a agregar" required></textarea>
+        
+          <input type="submit" value="Submit">          
+        </form>
+        <button onclick="goBackToUserView()">Regresar</button>
+        <!-- <button onclick="setNewSong()">Guardar</button> -->
+      </div>
+</body>
+</html>

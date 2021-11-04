@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Home</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <script src="../app/UserViewController.js"></script>
+
+</head>
+<body>
+    <button onclick="salir()">Logout</button>
+    <h1>💖♬🎤 KARAOKE!! 🎸🤘🎼🎵</h1>
+    <div class="form-group">
+        <label for="" style="font-weight:normal;">Welcome to your Karaoke application </label>
+        <label for="" style="font-weight:normal;" id="UserName"></label>
+    </div>
+    <br/>
+    <br/>
+    <div>
+        <audio controls = "controls" id="audio">
+        <source id="audioSource" src="" type="audio/mp3"></source>                    
+        </audio>
+    </div>
+    <div>
+        <h3>En esta sección se mostrará la letra de la canción!</h1>
+        <h2 id="letra" style="color: crimson; font-weight: bold;">------------------</h2>
+        <h3 id="letra2" style="color: crimson; font-weight: bold; opacity: 0.5;">------------------</h2>
+        <br/>
+        <br/>
+    </div>   
+    <p>
+        Nombre: <input type="text" id="idNombre" autocomplete="off" placeholder="Nombre de la Cancion" onchange="desactinput()" />
+        Artista: <input type="text" id="idArtista" autocomplete="off" placeholder="Nombre del Artista" onchange="desactinput2()" />
+        Album: <input type="text" id="idAlbum" autocomplete="off" placeholder="Nombre del Album" onchange="desactinput3()"/>
+        Letra: <input type="text" id="idLetra" autocomplete="off" placeholder="Fragmentro de la letra" onchange="desactinput4()" />
+        <button onclick="activinputs()">Filter</button>
+        <button onclick="gotoAddSongView()">Agregar Nueva Cancion</button>
+    </p>
+    <hr>
+    <table id="TablaCanciones" class="w3-table-all w3-hoverable">
+        <tr class="w3-light-grey">
+            <th style="text-align: center;">Nombre</th>
+            <th style="text-align: center;">Artista</th>
+            <th style="text-align: center;">Album</th>
+            <th style="text-align: center;">Status</th>
+            <th width="10%" style="text-align: center;"></th>
+        </tr>
+    </table>
+    <br/>
+    <br/>         
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>    
+
+        <link rel="stylesheet" href="../css/AddNewSong.css">
+        <script src="../app/EditarCancionController.js"></script>
+    </head>
+    <body>
+        <h2>Edit song 📝</h2>
+
+        <div>
+            <form onsubmit="saveEditedSong()" id="form_editedSong">
+                <label for="idNombreCancion">Canción</label>
+                <input type="text" id="idNombreCancion">
+            
+                <label for="idArtista">Artista</label>
+                <input type="text" id="idArtista">
+            
+                <label for="idAlbum">Album</label>     
+                <input type="text" id="idAlbum">
+
+                <label for="idURL">URL</label>     
+                <input type="text" id="idURL" readonly>
+
+                <label for="idLetra">Letra</label>     
+                <textarea id="idLetra"></textarea>
+                
+                <input type="submit" value="Submit">          
+            </form>
+            <button onclick="goBackToUserView()">Regresar</button>        
+        </div>
+    </body>
+</html>
