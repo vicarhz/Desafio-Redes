@@ -1,5 +1,5 @@
 async function loginUser(credentials) {
-    const jsonResponse = await fetch('http://localhost:3001/login', {
+    const jsonResponse = await fetch('https://redes-desafio.herokuapp.com/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'

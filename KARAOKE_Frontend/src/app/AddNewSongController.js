@@ -3,7 +3,7 @@ function goBackToUserView(){
 }  
 
 async function newSong_API(datos){
-  await fetch( 'http://localhost:3001/newSong', {
+  await fetch( 'https://redes-desafio.herokuapp.com/newSong', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

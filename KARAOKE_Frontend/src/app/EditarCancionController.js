@@ -8,7 +8,7 @@ function goBackToUserView(){
 }  
 
 async function getCancion_Api(DATA){
-    const jsonString = await fetch('http://localhost:3001/unaCancion',{
+    const jsonString = await fetch('https://redes-desafio.herokuapp.com/unaCancion',{
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -51,7 +51,7 @@ async function saveEditedSong(){
 }
 
 async function saveEditedSong_API(datos){
-  await fetch( 'http://localhost:3001/saveEditedSong', {
+  await fetch( 'https://redes-desafio.herokuapp.com/saveEditedSong', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'

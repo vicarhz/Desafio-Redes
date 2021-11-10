@@ -17,7 +17,7 @@ function gotoAddSongView(){
   
 
   async function getData() {
-    const jsonString = await fetch('http://localhost:3001/music',{
+    const jsonString = await fetch('https://redes-desafio.herokuapp.com/music',{
       method: "GET",
       headers: {
         'Content-Type': 'application/json'
@@ -29,7 +29,7 @@ function gotoAddSongView(){
   }
 
   async function getLetra(id) {
-    const jsonString = await fetch('http://localhost:3001/Letra',{
+    const jsonString = await fetch('https://redes-desafio.herokuapp.com/Letra',{
       method: "POST",
       headers: {
         'Content-Type': 'application/json'
@@ -206,7 +206,7 @@ async function LlenarTablaCancionesFiltrado(){
 }
 
 async function getSongsByFilter(DATA) {
-  const jsonString = await fetch('http://localhost:3001/filtrado',{
+  const jsonString = await fetch('https://redes-desafio.herokuapp.com/filtrado',{
     method: "POST",
     headers: {
       'Content-Type': 'application/json'
@@ -236,7 +236,7 @@ async function borrarCancion(id){
 }
 
 async function borrarCancion_Api(id){
-  const jsonString = await fetch('http://localhost:3001/borrar',{
+  const jsonString = await fetch('https://redes-desafio.herokuapp.com/borrar',{
     method: "DELETE",
     headers: {
       'Content-Type': 'application/json'
